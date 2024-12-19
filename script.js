@@ -7,8 +7,7 @@ const autoAdjust = document.getElementById('autoAdjust');
 // 모델 로드 함수에 에러 핸들링 추가
 async function loadModel() {
   try {
-    // 절대 경로로 변경하고 에러 로깅 추가
-    model = await tf.loadLayersModel('/my_model/model.json');
+    model = await tf.loadLayersModel('./model.json');
     console.log('모델이 성공적으로 로드되었습니다.');
   } catch (error) {
     console.error('모델 로딩 중 에러 발생:', error);
