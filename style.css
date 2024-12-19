@@ -1,10 +1,14 @@
-/* 페이지 레이아웃 */
-.third img {
-  width: 780px;
-  height: 480px;
+#imagePreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 20px; /* 필요에 따라 조정 */
+}
+
+#imagePreview img {
   max-width: 100%;
-  display: block;
-  object-fit: cover;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  height: auto;
+  display: block; /* 인라인 요소의 여백을 제거 */
 }
